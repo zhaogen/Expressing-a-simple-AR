@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
 
-# 1. 카메라 파라미터 설정 (본인의 HW3 결과값으로 반드시 수정하세요!)
+# 1. 카메라 파라미터 설정
 K = np.array([[1.0e+03, 0.0, 9.6e+02], 
               [0.0, 1.0e+03, 5.4e+02], 
               [0.0, 0.0, 1.0]], dtype=np.float32)
@@ -9,7 +9,7 @@ dist = np.zeros(5, dtype=np.float32) # [k1, k2, p1, p2, k3]
 
 # 2. 체스판 설정 (영상 기준 코너 개수)
 board_pattern = (7, 4) 
-square_size = 1.0 # 실제 칸 크기(cm/mm)를 넣으면 실제 크기로 그려집니다.
+square_size = 1.0 
 
 # 3. 3D 물체 좌표 정의 (정육면체)
 # 체스판 평면(z=0) 위에 한 변의 길이가 2인 정육면체를 정의합니다.
